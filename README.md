@@ -1,4 +1,4 @@
-# python notebook
+# python note
 
 ## 目的
 本ページでは私がpythonを布教する上で気づいた事を備忘録として記録しています．
