@@ -10,7 +10,8 @@
 
 ## pythonを科学計算で使ってみるノート
 
+* [step0: はじめに](http://nbviewer.jupyter.org/github/hanada-yasutaka/python-notebook/blob/master/pythonstep/step0.ipynb#)
 * [step1: pythonを高級電卓として](http://nbviewer.jupyter.org/github/hanada-yasutaka/python-notebook/blob/master/pythonstep/step1.ipynb#)
 * [step2: list, arrayを使ってみる](http://nbviewer.jupyter.org/github/hanada-yasutaka/python-notebook/blob/master/pythonstep/step2.ipynb#)
 * [step3: numpy, matplotlibを使って描画する](http://nbviewer.jupyter.org/github/hanada-yasutaka/python-notebook/blob/master/pythonstep/step3.ipynb#)
-* [step 4](http://nbviewer.jupyter.org/github/hanada-yasutaka/python-notebook/blob/master/pythonstep/step4.ipynb#)
+* [step4: 簡単な常微分方程式を解く](http://nbviewer.jupyter.org/github/hanada-yasutaka/python-notebook/blob/master/pythonstep/step4.ipynb#)
