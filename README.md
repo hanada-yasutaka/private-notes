@@ -16,6 +16,9 @@
 * [step3: numpy, matplotlibを使って描画する](http://nbviewer.jupyter.org/github/hanada-yasutaka/python-notebook/blob/master/pythonstep/step3.ipynb#)
 * [step4: 簡単な常微分方程式を解く](http://nbviewer.jupyter.org/github/hanada-yasutaka/python-notebook/blob/master/pythonstep/step4.ipynb#)
 
+## 自学自習
+* [list 内包表記](http://nbviewer.jupyter.org/github/hanada-yasutaka/python-notebook/blob/master/self-study/list.ipynb#)
+
 ## anaconda 覚書
 
 * [anaconda document](https://docs.anaconda.com/anaconda/)
