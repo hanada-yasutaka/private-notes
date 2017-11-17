@@ -34,6 +34,8 @@ $ fmt="\nreal:%e\nuser:%U\nsys:%S\nMemory:%M[KB]"
 \time -f ${fmt} ./LeibnizFormula
 ```
 
+どの言語を学ぶべきかは，[このひとの解説](http://www.mwsoft.jp/column/program_top10.html)が楽しい
+
 ## C言語
 
 なんだかんだ慣れ死んだC言語
