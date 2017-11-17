@@ -110,7 +110,7 @@ Memory:52848[KB] = [51MB]
 
 ## Wolfram言語 (Mathematica)
 
-愛人
+本妻
 
 [ソースコード](LeibnizFormula.wl)
 
@@ -193,4 +193,19 @@ real:4.94[sec]
 user:4.95[sec]
 sys:0.02[sec]
 Memory:10956[KB] = 10[MB]
+```
+
+## bash
+
+じつは計算できる娘だけど，めちゃくちゃ遅い．ここでは$nmax = 10^4$とした．
+[ソースコード](LeibnizFormula.sh)
+
+```
+$ \time -f ${fmt} bash LeibnizFormula.sh
+3.141692643590542976
+
+real:44.47[sec]
+user:4.99[sec]
+sys:50.23[sec]
+Memory:1548[KB]
 ```
