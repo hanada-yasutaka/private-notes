@@ -15,7 +15,7 @@ model name	: Intel(R) Xeon(R) CPU E5-1680 v3 @ 3.20GHz
 
 gnu版のtimeはメモリーの使用量も計測できるのでgnu版を使う
 
-注意としてubuntu(bash)のtimeコマンドにははbash版gnu版がありgnu版を使うためには
+注意としてubuntu(bash)のtimeコマンドにはbash版gnu版がありgnu版を使うためには
 
 ```
 $ /usr/bin/time
@@ -27,7 +27,7 @@ $ /usr/bin/time
 \time
 ```
 
-とすれば良い．フォーマットは以下のようにして出力する
+とすれば良いようだ．フォーマットは以下のようにして出力する
 
 ```
 $ fmt="\nreal:%e\nuser:%U\nsys:%S\nMemory:%M[KB]"
@@ -35,6 +35,8 @@ $ fmt="\nreal:%e\nuser:%U\nsys:%S\nMemory:%M[KB]"
 ```
 
 ## C言語
+
+なんだかんだ慣れ死んだC言語
 
 [ソースコード](LeibnizFormula.c)
 
@@ -51,6 +53,8 @@ Memory:624[KB]
 
 ## fortran
 
+fortranは永遠に生き残る気がする良い言語
+
 [ソースコード](LeibnizFormula.f90)
 
 ```
@@ -64,7 +68,9 @@ Memory:936[KB]
 
 ```
 
-## python
+## [python](https://www.python.org/)
+
+今カノだけど，浮気中
 
 [ソースコード](LeibnizFormula.py)
 
@@ -98,4 +104,91 @@ real:3.93[sec]
 user:3.89[sec]
 sys:0.03[sec]
 Memory:52848[KB] = [51MB]
+```
+
+## Wolfram言語 (Mathematica)
+
+愛人
+
+[ソースコード](LeibnizFormula.wl)
+
+```
+$ \time -f ${fmt} wolframscript -script LeibnizFormula.wl
+0.7853981658973315
+
+real:5.10[sec]
+user:4.99[sec]
+sys:0.11[sec]
+Memory:82500[KB] = [80MB]
+```
+
+ParallelSumに書き直すともっと早くなるけどここでは試さない
+
+## [Haskell](https://www.haskell.org/)
+
+お堅い愛人
+
+[ソースコード](LeibnizFormula.hs)
+
+listを作ると，大量のメモリを食らってしまうのでlistを作らない書き方の方が良いと思う．
+もっと賢い実装があると思うけど，思いつたら加筆します．
+
+```
+$ ghc -O -rtsopts -with-rtsopts=-K20G LeibnizFormula.hs
+$ \time -f ${fmt} ./LeibnizFormula
+3.141592663589326
+
+real:36.90[sec]
+user:32.70[sec]
+sys:4.11[sec]
+Memory:16264736[KB] = 15883[MB] = 15[GB]
+```
+
+## [Julia](https://julialang.org/)
+
+本ノートのきっかけを与えてくれた言語．現在キープさん
+
+[ソースコード](LeibnizFormula.jl)
+
+```
+$ \time -f ${fmt} julia LeibnizFormula.jl
+3.141592663589326
+
+real:8.76[sec]
+user:8.70[sec]
+sys:0.89[sec]
+Memory:182372[KB] = 178[MB]
+```
+
+## Java
+
+知らない娘
+
+[ソースコード](LeibnizFormula.java)
+
+```
+$ javac LeibnizFormula.java
+$ \time -f ${fmt} java -cp . LeibnizFormula
+Ans:3.1415926545880506
+
+real:79.54[sec]
+user:79.54[sec]
+sys:0.04[sec]
+Memory:28544[KB] = 27[MB]
+```
+
+## Javascript
+
+意外と早い娘
+
+[ソースコード](LeibnizFormula.java)
+
+```
+$ \time -f ${fmt} node LeibnizFormula.js
+3.141592663589326
+
+real:4.94[sec]
+user:4.95[sec]
+sys:0.02[sec]
+Memory:10956[KB] = 10[MB]
 ```

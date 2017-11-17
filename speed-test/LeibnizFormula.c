@@ -8,5 +8,5 @@ int main(void){
   };
   printf("Ans:%.16f\n",4*s);
   return 0;
-  
+
 }
