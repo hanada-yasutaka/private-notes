@@ -116,12 +116,12 @@ Memory:52848[KB] = [51MB]
 
 ```
 $ \time -f ${fmt} wolframscript -script LeibnizFormula.wl
-0.7853981658973315
+3.141592663589326
 
-real:5.10[sec]
-user:4.99[sec]
-sys:0.11[sec]
-Memory:82500[KB] = [80MB]
+real:4.99[sec]
+user:4.88[sec]
+sys:0.13[sec]
+Memory:80456[KB] = 78[MB]
 ```
 
 ParallelSumに書き直すともっと早くなるけどここでは試さない
