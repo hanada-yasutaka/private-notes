@@ -198,9 +198,10 @@ Memory:10956[KB] = 10[MB]
 ## bash
 
 じつは計算できる娘だけど，めちゃくちゃ遅い．ここでは$nmax = 10^4$とした．
+
 [ソースコード](LeibnizFormula.sh)
 
-```
+  ```
 $ \time -f ${fmt} bash LeibnizFormula.sh
 3.141692643590542976
 
