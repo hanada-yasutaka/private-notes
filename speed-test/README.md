@@ -1,6 +1,5 @@
 # 計算スピードの比較
 
-
 ライプニッツ級数
 
 ![equation](eq.gif)
@@ -34,7 +33,10 @@ $ fmt="\nreal:%e\nuser:%U\nsys:%S\nMemory:%M[KB]"
 \time -f ${fmt} ./LeibnizFormula
 ```
 
-どの言語を学ぶべきかは，[このひとの解説](http://www.mwsoft.jp/column/program_top10.html)が楽しい
+どの言語を学ぶべきかは，[このひとの解説](http://www.mwsoft.jp/column/program_top10.html)が楽しい．
+
+計算速度は実装の仕方にも依存するので，必ずしも最適なコードを書いたわけではないが，素朴にコードを書いた結果を以下に示す．
+
 
 ## C言語
 
@@ -72,7 +74,7 @@ Memory:936[KB]
 
 ## [python](https://www.python.org/)
 
-今カノだけど，浮気中
+本命だけど浮気中
 
 [ソースコード](LeibnizFormula.py)
 
@@ -128,7 +130,7 @@ ParallelSumに書き直すともっと早くなるけどここでは試さない
 
 ## [Haskell](https://www.haskell.org/)
 
-お堅い愛人
+お堅い人
 
 [ソースコード](LeibnizFormula.hs)
 
@@ -148,7 +150,7 @@ Memory:16264736[KB] = 15883[MB] = 15[GB]
 
 ## [Julia](https://julialang.org/)
 
-本ノートのきっかけを与えてくれた言語．現在キープさん
+本ノートのきっかけを与えてくれた言語．現在キープ状態
 
 [ソースコード](LeibnizFormula.jl)
 
@@ -164,7 +166,7 @@ Memory:182372[KB] = 178[MB]
 
 ## Java
 
-知らない娘
+知らない言語
 
 [ソースコード](LeibnizFormula.java)
 
@@ -229,7 +231,7 @@ Memory:6832[KB]
 ```
 
 
-# Scala
+## Scala
 
 遅いかと思いきや案外そうでもない
 
@@ -244,3 +246,52 @@ user:7.97
 sys:0.03
 Memory:41892[KB]
 ```
+
+## Go
+
+早いかと思いきやそーでもない
+
+[ソースコード](LeibnizFormula.go)
+
+```
+$ \time -f ${fmt} go run LeibnizFormula.go
+3.141592643589326
+
+real:17.38
+user:17.32
+sys:0.08
+Memory:39632[KB]
+```
+
+実装が悪いのか？
+
+## C++
+
+やんでれさん
+
+[ソースコード](LeibnizFormula.cpp)
+
+```
+$ \time -f ${fmt} ./LeibnizFormula
+3.14159
+
+real:36.45
+user:36.43
+sys:0.00
+Memory:1268[KB]
+```
+Cと同格かと思ったら，どうしてそんなに遅いの実装が悪いの？!
+
+c++はcのコードもコンパイルできるはず
+
+```
+$ g++ -o LeibnizFormula LeibnizFormula.c
+$ \time -f ${fmt} ./LeibnizFormula
+Ans:3.1415926635893259
+
+real:3.91
+user:3.91
+sys:0.00
+Memory:624[KB]
+```
+はやい．．．なぜ？

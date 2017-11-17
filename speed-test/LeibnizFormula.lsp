@@ -1,4 +1,3 @@
-
 (setq s 0.0)
 
 (dotimes (n (+ (expt 10 8) 1))
