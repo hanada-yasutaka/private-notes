@@ -210,3 +210,37 @@ user:4.99[sec]
 sys:50.23[sec]
 Memory:1548[KB]
 ```
+
+## Lisp
+
+かっこかっこかっこ
+
+[ソースコード](LeibnizFormula.lsp)
+
+```
+$ \time -f ${fmt} clisp LeibnizFormula.lsp
+
+3.1415968
+
+real:177.54
+user:174.38
+sys:3.05
+Memory:6832[KB]
+```
+
+
+# Scala
+
+遅いかと思いきや案外そうでもない
+
+[ソースコード](LeibnizFormula.scala)
+
+```
+$ \time -f ${fmt} scala LeibnizFormula.scala
+3.141592663589326
+
+real:8.14
+user:7.97
+sys:0.03
+Memory:41892[KB]
+```
