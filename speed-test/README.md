@@ -13,7 +13,7 @@ $ cat /proc/cpuinfo
 model name	: Intel(R) Xeon(R) CPU E5-1680 v3 @ 3.20GHz
 ```
 
-計測はgnu版ではメモリーの使用量も計測できるのでgnu版を使う
+gnu版のtimeはメモリーの使用量も計測できるのでgnu版を使う
 
 注意としてubuntu(bash)のtimeコマンドにははbash版gnu版がありgnu版を使うためには
 
